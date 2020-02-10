@@ -8,13 +8,13 @@ Este teste tem como objetivo avaliar e desafiar você. Não é obrigatório real
 
 Vamos ao teste!
 
-## Desafio do Car Sharing (Reserva de carros)!
+## Desafio do Car Sharing !
 
-Sua missão é importar os dados de veículos, que estão no excel, e criar uma API usando qualquer linguagem/framework para que possamos consumir estes dados de maneira prática, rápida e automatizada.
+Sua missão é importar os dados de veículos, que estão no veiculos.json, e criar uma API usando qualquer linguagem/framework para que possamos consumir estes dados de maneira prática, rápida e automatizada.
 
 Esta API deverá seguir o mínimo de práticas RESTful e conter listagens, busca, paginação e filtros. Fique à vontade para decidir quais filtros são mais interessantes.
 
-Você deve criar uma API de reserva contendo véiculos, reservas e o que mais você achar necessário.
+Você deve criar uma API de reserva contendo veículos, reservas e o que mais você achar necessário.
 
 ## Regras de negócio
 - Uma reserva de veículo deve durar no máximo 3 dias

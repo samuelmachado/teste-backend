@@ -1,0 +1,342 @@
+[
+    {
+        "id": 12,
+        "idUnidade": 427,
+        "idModelo": 3,
+        "placa": "BCS5B68",
+        "cor": "BRANCO",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 13,
+        "idUnidade": 427,
+        "idModelo": 1,
+        "placa": "PXS6266",
+        "cor": "BRANCO",
+        "modelo": {
+            "id": 1,
+            "idFabricante": 1,
+            "modelo": "Ka",
+            "imagem": "modelos/ka.png",
+            "fabricante": {
+                "id": 1,
+                "nome": "Ford"
+            }
+        }
+    },
+    {
+        "id": 14,
+        "idUnidade": 427,
+        "idModelo": 3,
+        "placa": "BCS6E63",
+        "cor": "BRANCO",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 15,
+        "idUnidade": 427,
+        "idModelo": 3,
+        "placa": "BCS3A76",
+        "cor": "BRANCO",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 16,
+        "idUnidade": 380,
+        "idModelo": 3,
+        "placa": "BCS6H23",
+        "cor": "BRANCA",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 17,
+        "idUnidade": 380,
+        "idModelo": 3,
+        "placa": "BCS6F89",
+        "cor": "BRANCA",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 19,
+        "idUnidade": 380,
+        "idModelo": 3,
+        "placa": "BCS6I85",
+        "cor": "BRANCA",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 20,
+        "idUnidade": 380,
+        "idModelo": 3,
+        "placa": "BCS6H85",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 23,
+        "idUnidade": 390,
+        "idModelo": 3,
+        "placa": "BCS5C13",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 24,
+        "idUnidade": 390,
+        "idModelo": 3,
+        "placa": "BCS6J70",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 25,
+        "idUnidade": 390,
+        "idModelo": 3,
+        "placa": "BCS6H59",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 26,
+        "idUnidade": 390,
+        "idModelo": 3,
+        "placa": "BCS5C01",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 27,
+        "idUnidade": 390,
+        "idModelo": 3,
+        "placa": "BCS5B91",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 28,
+        "idUnidade": 390,
+        "idModelo": 3,
+        "placa": "BCS6J51",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 29,
+        "idUnidade": 378,
+        "idModelo": 3,
+        "placa": "BCR1C77",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 30,
+        "idUnidade": 378,
+        "idModelo": 3,
+        "placa": "BCS6E34",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 31,
+        "idUnidade": 378,
+        "idModelo": 3,
+        "placa": "BCS7C15",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 32,
+        "idUnidade": 378,
+        "idModelo": 3,
+        "placa": "BCS6G04",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 33,
+        "idUnidade": 378,
+        "idModelo": 3,
+        "placa": "BCS7C26",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    },
+    {
+        "id": 34,
+        "idUnidade": 378,
+        "idModelo": 3,
+        "placa": "BCS6F14",
+        "cor": "Branco",
+        "modelo": {
+            "id": 3,
+            "idFabricante": 2,
+            "modelo": "Kwid",
+            "imagem": "modelos/kwid.png",
+            "fabricante": {
+                "id": 2,
+                "nome": "Renault"
+            }
+        }
+    }
+]
