@@ -38,6 +38,6 @@ Após terminar o desafio, você pode solicitar um pull request para a branch mas
 
 ## Só isso?
 
-Só! Mas se quiser fazer a diferença, tente implementar um pouco de TDD e utilizar docker para execução do projeto.
+Só! Mas se quiser fazer a diferença, tente documentar a API usando postman/swagger/insomnia e escrever algum teste unitário.
 
 Boa sorte! :)
