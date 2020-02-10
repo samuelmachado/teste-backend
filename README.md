@@ -20,6 +20,9 @@ Você deve criar uma API de reserva contendo veículos, reservas e o que mais vo
 - Uma reserva de veículo deve durar no máximo 3 dias
 - Eu não posso fazer uma reserva com data passada
 - Não posso reservar um carro que já está reservado dentro do período de data
+- Devemos ter um endpoint para fazer o check In da reserva registrando data hora
+- Devemos ter um endpoint para fazer o check Out da reserva registrando data hora
+
 
 ## Consigo fazer?
 
