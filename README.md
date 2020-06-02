@@ -2,9 +2,9 @@
 
 Olá Dev! Tudo bem?
 
-Nós estamos sempre em busca de profissionais interessantes e interessados, com boa capacidade de aprendizado, adaptação e principalmente bom senso!
+Nós estamos sempre em busca de profissionais interessantes e interessados, com boa capacidade de aprendizado e adaptação.
 
-Este teste tem como objetivo avaliar e desafiar você. Não é obrigatório realizá-lo completamente, queremos apenas reconhecer seu esforço e potencial para aprender, se adaptar e tomar decisões.
+Este teste tem como objetivo avaliar e desafiar você. 
 
 Vamos ao teste!
 
@@ -50,4 +50,4 @@ Boa sorte! :)
 Entre em contato comigo
 
 
-(12) 98294-8776
+samuel@devell.com.br
