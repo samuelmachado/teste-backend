@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: bitnami/postgresql:latest
+    container_name: carSharing-postgres
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - '5432:5432'
+    volumes:
+      - /tmp/postgres:/bitnami/postgresql/data
