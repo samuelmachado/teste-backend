@@ -1,0 +1,14 @@
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\bin\Debug\netcoreapp2.1\CarSharing.deps.json
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\bin\Debug\netcoreapp2.1\CarSharing.runtimeconfig.json
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\bin\Debug\netcoreapp2.1\CarSharing.runtimeconfig.dev.json
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\bin\Debug\netcoreapp2.1\CarSharing.dll
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\bin\Debug\netcoreapp2.1\CarSharing.pdb
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.csprojAssemblyReference.cache
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.csproj.CoreCompileInputs.cache
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.RazorAssemblyInfo.cache
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.RazorAssemblyInfo.cs
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.AssemblyInfoInputs.cache
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.AssemblyInfo.cs
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.RazorTargetAssemblyInfo.cache
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.dll
+C:\Users\rsls2\source\repos\CarSharing\CarSharing\obj\Debug\netcoreapp2.1\CarSharing.pdb
