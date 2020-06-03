@@ -12,4 +12,6 @@ routes.use(authMiddleware)
 
 routes.put('/users', UserController.update)
 
+
+
 export default routes
