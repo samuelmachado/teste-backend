@@ -1,0 +1,12 @@
+.idea/
+.vscode/*
+!.vscode/launch.json
+node_modules/
+dist/
+tmp/
+temp/
+*.log
+.DS_Store
+docker/volumes
+
+.env
