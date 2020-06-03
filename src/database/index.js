@@ -3,8 +3,12 @@ import Sequelize from 'sequelize'
 import databaseConfig from '../config/database'
 
 import User from '../app/models/User'
+import CarBrand from '../app/models/CarBrand'
+import CarModel from '../app/models/CarModel'
+import Car from '../app/models/Car'
+import Util from '../app/models/Unit'
 
-const models = [User]
+const models = [User, Util, Car, User, CarBrand, CarModel]
 
 class Database {
   constructor () {
