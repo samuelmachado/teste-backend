@@ -1,53 +1,46 @@
-# Teste de Backend
+# Teste backend
 
-Olá Dev! Tudo bem?
+## Running with Docker
 
-Nós estamos sempre em busca de profissionais interessantes e interessados, com boa capacidade de aprendizado e adaptação.
+```bash
+source dev.sh
+setup_dev_environment # create volumes, networks, envfile, install package and database setup
+dkupa # starts containers in attach mode
+dkupd # starts containes in detach mode
+dk bash # exec bash inside container
+```
 
-Este teste tem como objetivo avaliar e desafiar você. 
+## Routes
 
-Vamos ao teste!
+All routes are listed within the Postman folder
 
-## Desafio do Car Sharing !
+## Features
 
-Sua missão é importar os dados de veículos, que estão no veiculos.json, e criar uma API usando qualquer linguagem/framework para que possamos consumir estes dados de maneira prática, rápida e automatizada.
+- [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) integration
+- Dependency Injection done with the nice framework from [TypeDI](https://github.com/pleerock/typedi)
+- Simplified Database Query with the ORM [TypeORM](https://github.com/typeorm/typeorm)
+- Easy Exception Handling thanks to [routing-controllers](https://github.com/pleerock/routing-controllers)
+- Integrated Testing Tool thanks to [Jest](https://facebook.github.io/jest)
+- Code linter to [ESLint](https://eslint.org/)
+- Debug mode for dockerized environment
+- [GitHub Actions](https://github.com/features/actions) integration for CI
 
-Esta API deverá seguir o mínimo de práticas RESTful e conter listagens, busca, paginação e filtros. Fique à vontade para decidir quais filtros são mais interessantes.
+### Devhelp
 
-Você deve criar uma API de reserva contendo veículos, reservas e o que mais você achar necessário.
+```bash
+devhelp                Prints devhelp
 
-## Regras de negócio
-- Uma reserva de veículo deve durar no máximo 3 dias
-- Eu não posso fazer uma reserva com data passada
-- Não posso reservar um carro que já está reservado dentro do período de data
-- Devemos ter um endpoint para fazer o check In da reserva registrando data hora
-- Devemos ter um endpoint para fazer o check Out da reserva registrando data hora
+db_setup               Setup database
 
+setup_dev_environment  Setup dev environment
 
-## Consigo fazer?
+pkg_install            Install node packages
 
-Consegue sim! Só precisa saber (ou aprender agora) um pouco sobre as seguintes tecnologias:
-- Conceitos de API RESTful
-- Modelagem de dados
-- Alguma linguagem/framework
-- Algum banco de dados, por exemplo, MySQL, SQL Server, MongoDB, etc...
-- Git
+dkupa                  Starts docker services in attach mode (at first time, runs pkg_install)
 
-## Por onde começo?
+dkupd                  Starts docker services in detached mode (at first time, runs pkg_install)
 
-Primeiramente, você pode fazer um fork desse repositório aqui, para sua conta do Github, depois disso crie uma branch nova com o seu nome (ex: nome_sobrenome), para podermos indentificá-lo.
+dk "cmd"               Runs the 'cmd' command inside the container
 
-Após terminar o desafio, você pode solicitar um pull request para a branch master do nosso repositório. Vamos receber e fazer a avaliação de todos.
-
-## Só isso?
-
-Só! Mas se quiser fazer a diferença, tente documentar a API usando postman/swagger/insomnia e escrever algum teste unitário.
-
-Boa sorte! :)
-
-## Encontrou um problema?
-
-Entre em contato comigo
-
-
-samuel@devell.com.br
+dkdown                 Stop and remove docker containers
+```
