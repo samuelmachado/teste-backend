@@ -1,6 +1,5 @@
 import dataLoadService from "../sevice/DataLoadService"
 
-import Schedule from '../models/Schedule'
 import CarModel from '../models/CarModel'
 import Unit from '../models/Unit'
 import Car from '../models/Car'
