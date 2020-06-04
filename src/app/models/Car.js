@@ -17,6 +17,10 @@ class Car extends Model {
     )
     return this
   }
+  static associate (models) {
+    this.belongsTo(models.Unit, { foreignKey: 'UnitId', as: 'units' })
+    this.belongsTo(models.CarModel, { foreignKey: 'CarModelId', as: 'carModels' })
+  }
 }
 
 export default Car

@@ -19,13 +19,13 @@ module.exports = {
         allowNull: false,
         unique: true
       },
-      // carBrand_id: {
-      //   type: Sequelize.INTEGER,
-      //   references: { model: 'carBrands', key: 'id' },
-      //   onUpdate: 'CASCADE',
-      //   onDelete: 'SET NULL',
-      //   allowNull: true
-      // },
+      CarBrandId: {
+        type: Sequelize.INTEGER,
+        references: { model: 'CarBrands', key: 'id' },
+        onUpdate: 'CASCADE',
+        onDelete: 'SET NULL',
+        allowNull: true
+      },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false

@@ -19,20 +19,20 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      // Unit_id: {
-      //   type: Sequelize.INTEGER,
-      //   references: { model: 'units', key: 'id' },
-      //   onUpdate: 'CASCADE',
-      //   onDelete: 'SET NULL',
-      //   allowNull: true
-      // },
-      // carModel_id: {
-      //   type: Sequelize.INTEGER,
-      //   references: { model: 'carModels', key: 'id' },
-      //   onUpdate: 'CASCADE',
-      //   onDelete: 'SET NULL',
-      //   allowNull: true
-      // },
+      UnitId: {
+        type: Sequelize.INTEGER,
+        references: { model: 'Units', key: 'id' },
+        onUpdate: 'CASCADE',
+        onDelete: 'SET NULL',
+        allowNull: true
+      },
+      CarModelId: {
+        type: Sequelize.INTEGER,
+        references: { model: 'CarModels', key: 'id' },
+        onUpdate: 'CASCADE',
+        onDelete: 'SET NULL',
+        allowNull: true
+      },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false
