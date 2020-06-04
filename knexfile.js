@@ -6,7 +6,7 @@ module.exports = {
           host: '127.0.0.1',
           user: 'postgres',
           password: 'test',
-          database: 'allegra_db',
+          database: 'denvell',
       },
       migrations: {
         directory: './src/database/migrations'
