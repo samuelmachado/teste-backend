@@ -3,7 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
 
-    return queryInterface.createTable('carModels', { 
+    return queryInterface.createTable('CarModels', { 
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -19,21 +19,28 @@ module.exports = {
         allowNull: false,
         unique: true
       },
-      carBrand_id: {
-        type: Sequelize.INTEGER,
-        references: { model: 'carBrands', key: 'id' },
-        onUpdate: 'CASCADE',
-        onDelete: 'SET NULL',
-        allowNull: true
+      // carBrand_id: {
+      //   type: Sequelize.INTEGER,
+      //   references: { model: 'carBrands', key: 'id' },
+      //   onUpdate: 'CASCADE',
+      //   onDelete: 'SET NULL',
+      //   allowNull: true
+      // },
+      createdAt: {
+        type: Sequelize.DATE,
+        allowNull: false
       },
-
+      updatedAt: {
+        type: Sequelize.DATE,
+        allowNull: false
+      }
     });
 
   },
 
   down: (queryInterface, Sequelize) => {
     
-    return queryInterface.dropTable('users');
+    return queryInterface.dropTable('CarModels');
     
   }
 };

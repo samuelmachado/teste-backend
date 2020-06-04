@@ -5,8 +5,6 @@ module.exports = {
   password: 'docker',
   database: 'carSharing',
   define: {
-    timestamps: true,
-    underscored: true,
-    underscoredAll: true
+    timestamps: true
   }
 };

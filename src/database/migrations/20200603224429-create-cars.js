@@ -3,14 +3,14 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
 
-    return queryInterface.createTable('cars', { 
+    return queryInterface.createTable('Cars', { 
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         autoIncrement: true,
         primaryKey: true
       },
-      carPlate: {
+      plate: {
         type: Sequelize.STRING,
         allowNull: false,
         unique: true
@@ -19,25 +19,25 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      Unit_id: {
-        type: Sequelize.INTEGER,
-        references: { model: 'units', key: 'id' },
-        onUpdate: 'CASCADE',
-        onDelete: 'SET NULL',
-        allowNull: true
-      },
-      carModel_id: {
-        type: Sequelize.INTEGER,
-        references: { model: 'carModels', key: 'id' },
-        onUpdate: 'CASCADE',
-        onDelete: 'SET NULL',
-        allowNull: true
-      },
-      created_at: {
+      // Unit_id: {
+      //   type: Sequelize.INTEGER,
+      //   references: { model: 'units', key: 'id' },
+      //   onUpdate: 'CASCADE',
+      //   onDelete: 'SET NULL',
+      //   allowNull: true
+      // },
+      // carModel_id: {
+      //   type: Sequelize.INTEGER,
+      //   references: { model: 'carModels', key: 'id' },
+      //   onUpdate: 'CASCADE',
+      //   onDelete: 'SET NULL',
+      //   allowNull: true
+      // },
+      createdAt: {
         type: Sequelize.DATE,
         allowNull: false
       },
-      updated_at: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false
       }
@@ -46,6 +46,6 @@ module.exports = {
 
   down: (queryInterface, Sequelize) => {
 
-    return queryInterface.dropTable('cars');
+    return queryInterface.dropTable('Cars');
   }
 };

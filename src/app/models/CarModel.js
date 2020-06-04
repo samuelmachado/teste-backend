@@ -4,7 +4,10 @@ class CarModel extends Model {
   static init (sequelize) {
     super.init(
       {
-        id: Sequelize.INTEGER,
+        id: {
+          type: Sequelize.INTEGER,
+          primaryKey: true
+        },
         name: Sequelize.STRING,
         pathImage: Sequelize.STRING
       },
@@ -12,6 +15,7 @@ class CarModel extends Model {
         sequelize
       }
     )
+    return this
   }
 }
 

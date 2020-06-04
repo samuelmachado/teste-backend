@@ -1,16 +1,20 @@
 import Sequelize, { Model } from 'sequelize'
 
-class Util extends Model {
+class Unit extends Model {
   static init (sequelize) {
     super.init(
       {
-        id: Sequelize.INTEGER,    
+        id: {
+          type: Sequelize.INTEGER,
+          primaryKey: true
+        },    
       },
       {
         sequelize
       }
     )
+    return this
   }
 }
 
-export default Util
+export default Unit
