@@ -3,6 +3,7 @@ import UserController from './app/controllers/UserController'
 import SessionController from './app/controllers/SessionController'
 import CarController from './app/controllers/CarController'
 import CheckInController from './app/controllers/CheckInController'
+import CheckOutController from './app/controllers/CheckOutController'
 
 import authMiddleware from './app/middlewares/auth'
 
@@ -16,6 +17,8 @@ routes.use(authMiddleware)
 
 routes.post('/checkIn', CheckInController.store)
 routes.get('/checkIn', CheckInController.index)
+
+routes.post('/checkOut', CheckOutController.store)
 
 routes.put('/users', UserController.update)
 

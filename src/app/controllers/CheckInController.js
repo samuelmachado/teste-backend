@@ -8,7 +8,7 @@ import { startOfHour, parseISO, isBefore, subHours } from 'date-fns'
 import * as Yup from 'yup'
 import CarModel from '../models/CarModel'
 
-const limitCarForpage = 2
+const limitCarForpage = 3
 const dayMilliseconds = (1000 * 60 * 60 * 24)
 
 class CheckInController {
@@ -16,7 +16,7 @@ class CheckInController {
     const { page = 1 } = req.query
 
     const schedule = await Schedule.findAll({
-      where: { 'UserId': req.userId },
+      where: { 'UserId': req.userId, 'canceledAt' : null },
       order: ['withdrawalDate'],
       attributes: ['id', 'withdrawalDate', 'deliveryDate'],
       limit: limitCarForpage,
@@ -65,6 +65,14 @@ class CheckInController {
     const { CarId, withdrawalDate, deliveryDate } = req.body
     const WithdrawalDate = startOfHour(parseISO(withdrawalDate))
     const DeliveryDate = startOfHour(parseISO(deliveryDate))
+
+    const car = await Car.findOne({
+      where: { 'id': CarId  }
+    })
+    
+    if (!car) {
+      return res.status(400).json({ error: 'idCar invalido' })
+    }
 
     if (!isBefore(WithdrawalDate, DeliveryDate)) {
       return res.status(400).json({ error: 'A data de check In deve ser anterior a data de check Out!' })

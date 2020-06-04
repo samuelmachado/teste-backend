@@ -32,7 +32,7 @@ module.exports = {
         allowNull: true
       },
       canceledAt: {
-        type: Sequelize.DATE,
+        type: Sequelize.BOOLEAN,
         allowNull: true
       },
       createdAt: {

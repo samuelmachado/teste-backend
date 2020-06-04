@@ -9,7 +9,7 @@ import Car from '../app/models/Car'
 import Unit from '../app/models/Unit'
 import Schedule from '../app/models/Schedule'
 
-const models = [User, Car, CarBrand, Unit, CarModel, Schedule]
+const models = [User, CarBrand, Unit, CarModel, Car, Schedule]
 
 class Database {
   constructor () {

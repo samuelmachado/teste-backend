@@ -6,7 +6,7 @@ class Schedule extends Model {
       {
         withdrawalDate: Sequelize.DATE,
         deliveryDate: Sequelize.DATE,
-        canceledAt: Sequelize.DATE
+        canceledAt: Sequelize.BOOLEAN
       },
       {
         sequelize
