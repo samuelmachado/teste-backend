@@ -51,3 +51,23 @@ Entre em contato comigo
 
 
 samuel@devell.com.br
+
+## Informações do projeto
+
+Linguagem NodeJs
+
+Banco de dados POSTGRES
+  Obs: Utilização do docker para startar o BD.
+  $ docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
+
+## Implementação
+
+Modelagem do banco:
+Seis Tabelas, sendo elas:
+. Veículo
+. Unidade
+. Modelo
+. Fabricante
+. Agenda
+. User
+
