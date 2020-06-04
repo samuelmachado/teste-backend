@@ -14,11 +14,9 @@ export default async (WithdrawalDate, DeliveryDate, CarId) => {
   schedules.map((schedule) => {
     
     if (isBefore(WithdrawalDate, schedule.withdrawalDate) & isBefore(DeliveryDate, schedule.withdrawalDate) & create == true){
-      console.log("passou1");
       return create = true
     }
     if (isBefore(schedule.deliveryDate, WithdrawalDate) & isBefore(schedule.deliveryDate, DeliveryDate) & create == true){
-      console.log("passou2");
       return create = true
     }
     create = false
