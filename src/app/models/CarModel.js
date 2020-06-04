@@ -13,7 +13,6 @@ class CarModel extends Model {
     )
     return this
   }
-
   static associate (models) {
     this.belongsTo(models.CarBrand, { foreignKey: 'CarBrandId', as: 'carBrandId' })
   }

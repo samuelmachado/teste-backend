@@ -22,7 +22,6 @@ class DataLoadController {
       data.units.map(async (id) => {
         let unity = {"id": id}
         if (await this.verify(unity, 0)){
-          console.log("entroou");
           await Unit.create(unity)
         }
       })

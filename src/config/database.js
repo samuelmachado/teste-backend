@@ -4,6 +4,7 @@ module.exports = {
   username: 'postgres',
   password: 'docker',
   database: 'carSharing',
+  logging: false,
   define: {
     timestamps: true
   }
