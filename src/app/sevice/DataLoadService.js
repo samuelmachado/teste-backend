@@ -1,6 +1,6 @@
 const data = require("../../../veiculos.json")
 
-let units = new Set()
+let units = []
 let cars = []
 let carModels = []
 let carBrands = []
@@ -13,21 +13,21 @@ const removeDuplicateItem = (objs) => {
 
 const entityExtractor = (data) => {
    
-  units.add(data.idUnidade)
+  units.push(data.idUnidade)
   
   cars.push({
     "id": data.id,
-    "idUnit": data.idUnidade,
-    "idcarModels": data.idModelo,
-    "carPlate": data.placa,
+    "UnitId": data.idUnidade,
+    "CarModelId": data.idModelo,
+    "plate": data.placa,
     "color": data.cor
   })
 
   carModels.push({
     "id": data.modelo.id,
     "name": data.modelo.modelo,
-    "image": data.modelo.imagem,
-    "idCarBrands": data.modelo.idFabricante
+    "pathImage": data.modelo.imagem,
+    "CarBrandId": data.modelo.idFabricante
   })
 
   carBrands.push({
@@ -36,10 +36,11 @@ const entityExtractor = (data) => {
   })
 }
 
-export default async () => {
+export default () => {
   
   data.map(entityExtractor)
   
+  units = removeDuplicateItem(units)
   cars = removeDuplicateItem(cars)
   carModels = removeDuplicateItem(carModels)
   carBrands = removeDuplicateItem(carBrands)
