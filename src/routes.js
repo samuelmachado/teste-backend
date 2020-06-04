@@ -15,6 +15,7 @@ routes.get('/cars', CarController.index)
 routes.use(authMiddleware)
 
 routes.post('/checkIn', CheckInController.store)
+routes.get('/checkIn', CheckInController.index)
 
 routes.put('/users', UserController.update)
 

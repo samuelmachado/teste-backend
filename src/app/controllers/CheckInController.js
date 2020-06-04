@@ -1,8 +1,12 @@
 import Schedule from '../models/Schedule'
+import User from '../models/User'
+import Car from '../models/Car'
+import CarBrand from '../models/CarBrand'
 import verifySchedule from '../sevice/verifySchedule'
 
 import { startOfHour, parseISO, isBefore, subHours } from 'date-fns'
 import * as Yup from 'yup'
+import CarModel from '../models/CarModel'
 
 const limitCarForpage = 2
 const dayMilliseconds = (1000 * 60 * 60 * 24)
@@ -12,48 +16,42 @@ class CheckInController {
     const { page = 1 } = req.query
 
     const schedule = await Schedule.findAll({
-      where: { UserId: req.userId },
-      order: ['date'],
+      where: { 'UserId': req.userId },
+      order: ['withdrawalDate'],
       attributes: ['id', 'withdrawalDate', 'deliveryDate'],
       limit: limitCarForpage,
       offset: (page - 1) * limitCarForpage,
       include: [
         {
-          model: UserId,
+          model: User,
           as: 'user',
           attributes: ['name'],
         },
         {
-          model: CarId,
+          model: Car,
           as: 'carId',
           attributes: ['id', 'plate', 'color', 'UnitId'],
           include: [
             {
-              model: CarModelId,
+              model: CarModel,
               as: 'carModels',
-              attributes: ['id', 'name', 'pathImage'],
+              attributes: ['name', 'pathImage'],
               include: [
                 {
-                  model: CarBrandId,
+                  model: CarBrand,
                   as: 'carBrandId',
-                  attributes: ['name']
+                  attributes: ['name'],
                 }
               ]
             }
           ]
         },
-      ]
+      ], 
     })
     return res.json(schedule)
   }
 
-  verify () {
-    return 1
-  }
-
   async store (req, res) {
-    
-    
     const schema = Yup.object().shape({
       CarId: Yup.number().required(),
       withdrawalDate: Yup.date().required(),
@@ -65,7 +63,6 @@ class CheckInController {
     }
 
     const { CarId, withdrawalDate, deliveryDate } = req.body
- 
     const WithdrawalDate = startOfHour(parseISO(withdrawalDate))
     const DeliveryDate = startOfHour(parseISO(deliveryDate))
 
@@ -86,7 +83,6 @@ class CheckInController {
     const create = await verifySchedule(WithdrawalDate, DeliveryDate, CarId)
     
     if( create ){
-
       const schedule = await Schedule.create({
         UserId: req.userId,
         CarId,
@@ -95,42 +91,7 @@ class CheckInController {
       })
       return res.json(schedule)
     }
-    
     return res.status(400).json({ error: 'Esta data não está disponível' })
-  }
-
-  async delete (req, res) {
-    const appointment = await Appointment.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          as: 'provider',
-          attributes: ['name', 'email']
-        }
-      ]
-    })
-
-    if (appointment.user_id !== req.userId) {
-      return res.status(401).json({
-        error: "You don't have permission to cancel this appointment."
-      })
-    }
-
-    const dateWithSub = subHours(appointment.date, 2)
-
-    if (isBefore(dateWithSub, new Date())) {
-      return res.status(401).json({
-        error: 'You can only cancel appointments 2 hours in advance.'
-      })
-    }
-
-    appointment.canceled_at = new Date()
-
-    await appointment.save()
-
-    await Queue.add(CancellationMail.key, { appointment })
-
-    return res.json(appointment)
   }
 }
 
