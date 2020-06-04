@@ -17,7 +17,7 @@ class Schedule extends Model {
 
   static associate(models) {
     this.belongsTo(models.User, { foreignKey: 'UserId', as: 'user' })
-    this.belongsTo(models.Car, { foreignKey: 'CarId', as: 'provider' })
+    this.belongsTo(models.Car, { foreignKey: 'CarId', as: 'carId' })
   }
 }
 
