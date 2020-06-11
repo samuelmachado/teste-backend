@@ -5,7 +5,8 @@ module.exports = {
     return queryInterface.createTable('unidades', {
       id: {
         type: Sequelize.INTEGER,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true
       },
       created_at: {
         type: Sequelize.DATE,
