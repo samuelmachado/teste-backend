@@ -6,7 +6,8 @@ class Unidade extends Model {
     super.init({
       id: {
         type: Sequelize.INTEGER,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true
       }
     },
     {

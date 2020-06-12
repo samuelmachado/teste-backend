@@ -9,23 +9,33 @@ module.exports = {
           primaryKey: true,
           autoIncrement: true
         },
-        data_inicial_reserva: {
+        data_inicial: {
           type: Sequelize.DATE,
           allowNull: false
         },
-        data_final_reserva: {
+        data_final: {
           type: Sequelize.DATE,
           allowNull: false
+        },
+        data_retirada: {
+          type: Sequelize.DATE
         },
         data_devolucao: {
-          type: Sequelize.DATE,
-          allowNull: true
+          type: Sequelize.DATE
         },
         cliente_id: {
           type: Sequelize.INTEGER,
           references: { model: 'clientes', key: 'id' },
           onUpdate: 'CASCADE',
-          onDelete: 'SET NULL'
+          onDelete: 'SET NULL',
+          allowNull: false
+        },
+        atendente_id: {
+          type: Sequelize.INTEGER,
+          references: { model: 'usuarios', key: 'id' },
+          onUpdate: 'CASCADE',
+          onDelete: 'SET NULL',
+          allowNull: false
         },
         unidade_id: {
           type: Sequelize.INTEGER,
