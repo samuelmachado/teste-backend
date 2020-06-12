@@ -6,7 +6,6 @@ import truncate from './util/truncate'
 test('Salvando e deletando Modelo', async () => {
   await Fabricante.create({ id: 2, nome: 'Renault' })
   const modelo = await Modelo.create({ id: 3, fabricante_id: 2, modelo: 'Kwid', imagem: 'modelos/kwid.png' })
-  console.log(modelo)
   expect(modelo).not.toBeNull()
   await truncate()
 })
@@ -19,7 +18,6 @@ test('Buscando Modelo', async () => {
 
   const modelo = await Modelo.findOne({ where: { modelo: 'Ka' } })
 
-  console.log(modelo)
   expect(modelo).not.toBeNull()
 })
 
