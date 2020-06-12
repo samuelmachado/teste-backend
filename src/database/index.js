@@ -5,10 +5,11 @@ const Unidade = require('../app/models/Unidade')
 const Fabricante = require('../app/models/Fabricante')
 const Modelo = require('../app/models/Modelo')
 const Veiculo = require('../app/models/Veiculo')
+const Cliente = require('../app/models/Cliente')
 
 const databaseConfig = require('../config/database')
 
-const models = [Usuario, Unidade, Fabricante, Modelo, Veiculo]
+const models = [Usuario, Unidade, Fabricante, Modelo, Veiculo, Cliente]
 
 class Database {
   constructor () {
