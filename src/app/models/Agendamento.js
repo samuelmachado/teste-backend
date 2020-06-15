@@ -17,13 +17,19 @@ class Agendamento extends Model {
       validaDataLocacao: {
         type: Sequelize.VIRTUAL,
         get () {
-          return isBefore(this.data_inicial, new Date())
+          return isBefore(new Date(), this.data_inicial)
         }
       },
       validaDataFinal: {
         type: Sequelize.VIRTUAL,
         get () {
-          return addDays(this.data_inicial, 3)
+          return isBefore(this.data_final, addDays(this.data_inicial, 3)) && this.data_final > this.data_inicial
+        }
+      },
+      finalizado: {
+        type: Sequelize.VIRTUAL,
+        get () {
+          return !!this.data_devolucao
         }
       }
     },

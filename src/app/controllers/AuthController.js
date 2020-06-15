@@ -1,21 +1,21 @@
 const jwt = require('jsonwebtoken')
 const authConfig = require('../../config/auth')
-const User = require('../models/User')
+const Usuario = require('../models/Usuario')
 
 class AuthController {
   async store (req, res) {
-    const { email, password } = req.body
-    const user = await User.findOne({ where: { email } })
-    if (!user) {
-      res.status(401).body({ error: 'User not found' })
+    const { email, senha } = req.body
+    const usuario = await Usuario.findOne({ where: { email } })
+    if (!usuario) {
+      res.status(401).json({ error: 'Usuario não encontrado' })
       return
     }
-    if (!(await user.checkPassword(password))) {
-      res.status(401).body = { error: 'Password does not match' }
+    if (!(await usuario.checkPassword(senha))) {
+      res.status(401).json({ error: 'Senha incorreta' })
       return
     }
 
-    const { id } = user
+    const { id } = usuario
 
     res.status(201).json({
       token: jwt.sign({ id }, authConfig.secret, {
