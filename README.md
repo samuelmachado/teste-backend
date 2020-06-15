@@ -1,5 +1,39 @@
 # Teste de Backend
 
+## Instalação das dependências
+ - yarn
+
+## Configurando a aplicação
+ 1.  Renomear o arquivo 'example.env' para .env
+ 2. Preencher ao menos as variáveis:
+
+DB_HOST= < host do banco de dados>
+
+DB_USER= < usuario do banco>
+
+DB_PASS= < senha do usuario >
+
+DB_NAME= < nome do banco >
+
+APP_SECRET= < chave para geração de token JWT >
+
+EXP_TIME= < tempo de duração da chave. Exemplo: 7d (7 dias) >
+
+## Configurando o banco de dados
+ - yarn sequelize db:create
+ - yarn sequelize db:migrate
+
+## Executando os testes
+ - yarn test
+
+## Execundo a aplicação
+ - yarn start
+
+
+### Autor: Gabriel Pereira Bastos - gabrielpb88@gmail.com
+
+# Teste de Backend
+
 Olá Dev! Tudo bem?
 
 Nós estamos sempre em busca de profissionais interessantes e interessados, com boa capacidade de aprendizado e adaptação.
